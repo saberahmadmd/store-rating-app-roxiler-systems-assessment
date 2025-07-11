@@ -1,0 +1,79 @@
+.admin-dashboard {
+  padding: 20px;
+}
+
+.dashboard-title {
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.stat-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  font-size: 24px;
+}
+
+.stat-icon.users {
+  background-color: rgba(52, 152, 219, 0.1);
+  color: #3498db;
+}
+
+.stat-icon.stores {
+  background-color: rgba(46, 204, 113, 0.1);
+  color: #2ecc71;
+}
+
+.stat-icon.ratings {
+  background-color: rgba(241, 196, 15, 0.1);
+  color: #f1c40f;
+}
+
+.stat-info h3 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  color: #7f8c8d;
+}
+
+.stat-info p {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.dashboard-loading,
+.dashboard-error {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+}
+
+.dashboard-error {
+  color: #e74c3c;
+}

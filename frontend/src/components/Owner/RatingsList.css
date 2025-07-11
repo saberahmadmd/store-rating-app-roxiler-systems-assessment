@@ -1,0 +1,139 @@
+.ratings-list {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ratings-heading {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  max-width: 450px;
+  margin: 0 auto 30px;
+}
+
+.search-icon {
+  color: #7f8c8d;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  color: #2c3e50;
+  background: transparent;
+}
+
+.ratings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.rating-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #e3f2fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3498db;
+  font-size: 20px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.user-email {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+.rating-info {
+  text-align: right;
+}
+
+.rating-value {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 18px;
+  font-weight: bold;
+  color: #f39c12;
+  gap: 5px;
+}
+
+.star-icon {
+  color: #f1c40f;
+  font-size: 18px;
+}
+
+.rating-date {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #95a5a6;
+}
+
+.no-ratings {
+  text-align: center;
+  padding: 60px 20px;
+  color: #7f8c8d;
+  font-size: 16px;
+}
+
+.no-ratings-icon {
+  color: #f1c40f;
+  margin-bottom: 10px;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 50px;
+  font-size: 18px;
+}
+
+.error {
+  color: #e74c3c;
+}

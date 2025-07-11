@@ -1,0 +1,124 @@
+.stores-list {
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.list-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  max-width: 400px;
+  margin: 0 auto 30px;
+}
+
+.search-icon {
+  color: #7f8c8d;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+}
+
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.store-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.store-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.store-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.store-icon {
+  color: #3498db;
+  font-size: 18px;
+}
+
+.store-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.store-info {
+  color: #34495e;
+  font-size: 0.95rem;
+  margin: 6px 0;
+}
+
+.store-rating {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #f39c12;
+  margin-top: 10px;
+}
+
+.star-icon {
+  margin-right: 6px;
+  color: #f1c40f;
+}
+
+.no-data {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+@media (max-width: 600px) {
+  .store-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .store-rating {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,4 @@
+.form-control[type="textarea"] {
+  min-height: 100px;
+  resize: vertical;
+}
